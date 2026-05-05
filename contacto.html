@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+
+    <h1>Formulario de contacto</h1>
+    <form action="#" method="get">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        
+
+        <label for="apellidos"><span>*</span>Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" required>
+        
+
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" min="18" max="120" placeholder="Mínimo 18, máximo 120">
+        
+
+        <label for="email"><span>*</span>Email</label>
+        <input type="email" name="email" id="email" required>
+        
+
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha">
+        
+
+        <label for="asunto"><span>*</span>Asunto</label>
+        <input type="text" name="asunto" id="asunto" required>
+        
+        
+        <label for="comentario">Comentarios</label>
+        <textarea name="comentario" id="comentario" maxlength="150 caracteres" placeholder="Escribe aquí tu comentario"></textarea> <small class="comentario">Máx. 150 caracteres</small>
+        <br>
+        
+        <div class="botones">
+            <button type="submit" onclick="alert('Mensaje enviado!')">Enviar</button>
+            <br>
+            <button type="reset" value="Borrar todo">Borrar todo</button>
+        </div>
+        <small><span>*</span>Campos requeridos</small>
+
+    </form>
+
+</body>
+</html>
