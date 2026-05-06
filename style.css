@@ -10,6 +10,7 @@ body{
     
 }
 
+
 h1{
     font-size: 60px;
     color: whitesmoke;
@@ -89,4 +90,15 @@ h3{
     width: 60%;
     color: rgba(255, 250, 240, 0.836);
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .menu{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    h3{
+        width: 100%;
+    }
 }
