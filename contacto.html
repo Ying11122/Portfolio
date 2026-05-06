@@ -9,25 +9,21 @@
 <body>
 
     <h1>Formulario de contacto</h1>
-    <form action="#" method="get">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre">
+    <form action="recibido.html" method="get" onsubmit="alert('Mensaje enviado!')">
+        <label for="nombre"><span>*</span>Nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
         
 
-        <label for="apellidos"><span>*</span>Apellidos</label>
-        <input type="text" name="apellidos" id="apellidos" required>
-        
-
-        <label for="edad">Edad</label>
-        <input type="number" name="edad" id="edad" min="18" max="120" placeholder="Mínimo 18, máximo 120">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos">
         
 
         <label for="email"><span>*</span>Email</label>
         <input type="email" name="email" id="email" required>
         
 
-        <label for="fecha">Fecha</label>
-        <input type="date" name="fecha" id="fecha">
+        <label for="tel">Teléfono</label>
+        <input type="tel" pattern="[0-9]*" name="tel" id="tel">
         
 
         <label for="asunto"><span>*</span>Asunto</label>
@@ -39,7 +35,7 @@
         <br>
         
         <div class="botones">
-            <button type="submit" onclick="alert('Mensaje enviado!')">Enviar</button>
+            <button type="submit">Enviar</button>
             <br>
             <button type="reset" value="Borrar todo">Borrar todo</button>
         </div>
